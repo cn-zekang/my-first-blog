@@ -21,6 +21,19 @@
         <p>我是热爱苹果产品的学生。</p>
     <a href="https://space.bilibili.com/1981943544?spm_id_from=333.1007.0.0">哔哩哔哩动画：热爱苹果产品的学生</a>
     <br>
+       <div>
+        <h1><a href="/">Tiger Logic Blog</a></h1>
+    </div>
+
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    <br>
+    <h1>News</h1>
     <p id="AppleNews.Fir"></p>
     <button type="button" onclick="Function_Fir()">苹果公司新闻</button>
     <p id="ShenZhou.thirty"></p>
