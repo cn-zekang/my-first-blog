@@ -6,6 +6,36 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <title>Tiger Logic</title>
+        <div>
+            <style>
+            .button2 {
+                    display: inline-block;
+                    padding: .3em .5em;
+                    background-image: linear-gradient(#ddd, #bbb);
+                    border: 1px solid rgba(0,0,0,.2);
+                    border-radius: .3em;
+                    box-shadow: 0 1px white inset;
+                    text-align: center;
+                    text-shadow: 0 1px 1px black;
+                    color:red;
+                    font-weight: lighter;
+            }
+            </style>
+            <style>
+            .button1 {
+                    display: inline-block;
+                    padding: .3em .5em;
+                    background-image: linear-gradient(#ddd, #bbb);
+                    border: 1px solid rgba(0,0,0,.2);
+                    border-radius: .3em;
+                    box-shadow: 0 1px white inset;
+                    text-align: center;
+                    text-shadow: 0 1px 1px black;
+                    color: grey;
+                    font-weight: lighter;
+            }
+            </style>
+        </div>
         <script>
         function Function_Fir()
         {
@@ -40,9 +70,9 @@
     <br>
     <h1>News</h1>
     <p id="AppleNews.Fir"></p>
-    <button type="button" onclick="Function_Fir()">苹果公司新闻</button>
+    <button type="button" onclick="Function_Fir()" class="button1">苹果公司新闻</button>
     <p id="ShenZhou.thirty"></p>
-    <button type="button" onclick="Function_Sec()">神舟十三号顺利降落</button>
+    <button type="button" onclick="Function_Sec()" style="background-color: " class="button2">神舟十三号顺利降落</button>
     <div>
         <p>Corporation © PingYi NO.5 primary school.</p>
     </div>
