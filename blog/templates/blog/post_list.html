@@ -8,6 +8,11 @@
         <title>Tiger Logic</title>
         <div>
             <style>
+                body{
+                            background-size: 100% ;
+                }
+            </style>
+            <style>
             .button2 {
                     display: inline-block;
                     padding: .3em .5em;
@@ -22,7 +27,7 @@
             }
             </style>
             <style>
-            .button1 {
+            .button2 {
                     display: inline-block;
                     padding: .3em .5em;
                     background-image: linear-gradient(#ddd, #bbb);
@@ -31,7 +36,7 @@
                     box-shadow: 0 1px white inset;
                     text-align: center;
                     text-shadow: 0 1px 1px black;
-                    color: grey;
+                    color:red;
                     font-weight: lighter;
             }
             </style>
@@ -49,32 +54,38 @@
         }
         </script>
     </head>
-    <body>
+    <body background="https://tigergit.pythonanywhere.com/static/image/img1.jpg">
     <meta charset="utf-8">
-        <h1>Tiger Logic ————老虎逻辑</h1>
-        <h2>大家好啊，初来乍到,还请多多包容，千万不要攻击我的网站。</h2>
-    <img class="bili-avatar-img bili-avatar-face bili-avatar-img-radius" src="https://i0.hdslb.com/bfs/face/6f9fcfa2b084645d8e59cb39a927e884a23eefc4.jpg@160w_160h_1c_1s.webp" alt="">
-    <a href="https://space.bilibili.com/1981943544?spm_id_from=333.1007.0.0">哔哩哔哩动画：热爱苹果产品的学生</a>
+        <h1 style="text-align: center">Tiger Logic ————老虎逻辑</h1>
+        <h2 style="text-align: center">大家好啊，初来乍到,还请多多包容，千万不要攻击我的网站。</h2>
+    <p style="text-align: center"><img class="My_bilibili_head_logo" src="https://tigergit.pythonanywhere.com/static/image/logo.jpg" alt=""></p>
+    <div style="text-align: center">
+        <a href="https://space.bilibili.com/1981943544?spm_id_from=333.1007.0.0">哔哩哔哩动画：热爱苹果产品的学生</a>
+    </div>
     <br>
        <div>
-        <h1><a href="/">Tiger Logic Blog</a></h1>
+        <h1 style="text-align: center"><a href="/">Tiger Logic Blog</a></h1>
     </div>
 
     {% for post in posts %}
         <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p style="text-align: center">published: {{ post.published_date }}</p>
+            <h1 style="text-align: center"><a href="">{{ post.title }}</a></h1>
+            <p style="text-align: center">{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
     <br>
-    <h1>News</h1>
-    <p id="AppleNews.Fir"></p>
-    <button type="button" onclick="Function_Fir()" class="button1">苹果公司新闻</button>
-    <p id="ShenZhou.thirty"></p>
-    <button type="button" onclick="Function_Sec()" style="background-color: " class="button2">神舟十三号顺利降落</button>
+    <h1 style="text-align: center">News</h1>
+    <p style="text-align: center" id="AppleNews.Fir"></p>
+    <div style="text-align: center">
+        <button style="text-align: center" type="button" onclick="Function_Fir()" class="button1">苹果公司新闻</button>
+    </div>
+    <p style="text-align: center" id="ShenZhou.thirty"></p>
+    <div style="text-align: center">
+        <button style="text-align: center" type="button" onclick="Function_Sec()" class="button2">神舟十三号飞船顺利着陆</button>
+    </div>
     <div>
-        <p>Corporation © PingYi NO.5 primary school.</p>
+        <p style="text-align: center">Corporation © PingYi NO.5 primary school.</p>
     </div>
     </body>
 </html>
